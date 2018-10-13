@@ -34,4 +34,18 @@
     cursor: pointer;
     opacity: 0.5;
   }
+
+  &__normal {
+    padding: 0.75rem 2rem;
+    border-radius: 2rem;
+    background-color: $color-primary;
+    color: white;
+    &--shop {
+    }
+    &--share {
+      border: 1px solid $color-primary;
+      background-color: white;
+      color: $color-primary;
+    }
+  }
 }

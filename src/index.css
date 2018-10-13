@@ -106,6 +106,15 @@ a {
   .button:hover {
     cursor: pointer;
     opacity: 0.5; }
+  .button__normal {
+    padding: 0.75rem 2rem;
+    border-radius: 2rem;
+    background-color: #d22030;
+    color: white; }
+    .button__normal--share {
+      border: 1px solid #d22030;
+      background-color: white;
+      color: #d22030; }
 
 .banner {
   background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)), url("https://schwans-prod.imgix.net/images/campaigns/photos/000/041/287/width_800/1536238305DSC02778.JPG?ch=Width%2CDPR%2CSave-Data&auto=format%2Ccompress&dpr=2&w=650");
@@ -195,19 +204,31 @@ a {
   grid-template-columns: 1fr minmax(min-content, 120rem) 1fr;
   grid-template-rows: min-content min-content;
   justify-items: center;
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  text-transform: uppercase; }
 
 .seasonal-bundles {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  grid-column-gap: 2.5rem;
+  grid-gap: 2.5rem;
   margin-bottom: 4rem;
   padding: 0rem 4rem; }
   .seasonal-bundles__container {
     display: grid;
     grid-template-rows: 1fr min-content;
-    box-shadow: 10px 10px 8px 10px #888888; }
+    box-shadow: 3px 3px 8px 1px #888888; }
   .seasonal-bundles__img {
     width: 100%; }
   .seasonal-bundles__content {
-    color: #d22030; }
+    color: #d22030;
+    padding: 1rem;
+    display: grid;
+    grid-template-rows: min-content min-content min-content;
+    grid-row-gap: 1rem; }
+  .seasonal-bundles__actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+  .seasonal-bundles__buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center; }
