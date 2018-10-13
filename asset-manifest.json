@@ -1,14 +1,13 @@
 {
-  "main.css": "/schwan_cares_proposal/static/css/main.34033f11.chunk.css",
-  "main.js": "/schwan_cares_proposal/static/js/main.7662c546.chunk.js",
-  "main.js.map": "/schwan_cares_proposal/static/js/main.7662c546.chunk.js.map",
-  "static/js/1.6105a37c.chunk.js": "/schwan_cares_proposal/static/js/1.6105a37c.chunk.js",
-  "static/js/1.6105a37c.chunk.js.map": "/schwan_cares_proposal/static/js/1.6105a37c.chunk.js.map",
+  "main.css": "/schwan_cares_proposal/static/css/main.6596809c.chunk.css",
+  "main.js": "/schwan_cares_proposal/static/js/main.26256397.chunk.js",
+  "main.js.map": "/schwan_cares_proposal/static/js/main.26256397.chunk.js.map",
+  "static/js/1.11d69d49.chunk.js": "/schwan_cares_proposal/static/js/1.11d69d49.chunk.js",
+  "static/js/1.11d69d49.chunk.js.map": "/schwan_cares_proposal/static/js/1.11d69d49.chunk.js.map",
   "runtime~main.js": "/schwan_cares_proposal/static/js/runtime~main.9c76c8dd.js",
   "runtime~main.js.map": "/schwan_cares_proposal/static/js/runtime~main.9c76c8dd.js.map",
-  "static/media/logo.svg": "/schwan_cares_proposal/static/media/logo.5d5d9eef.svg",
-  "static/css/main.34033f11.chunk.css.map": "/schwan_cares_proposal/static/css/main.34033f11.chunk.css.map",
+  "static/css/main.6596809c.chunk.css.map": "/schwan_cares_proposal/static/css/main.6596809c.chunk.css.map",
   "index.html": "/schwan_cares_proposal/index.html",
-  "precache-manifest.da108ed024243812b10048eac9ac19de.js": "/schwan_cares_proposal/precache-manifest.da108ed024243812b10048eac9ac19de.js",
+  "precache-manifest.907af6c47eb30af4138f90d48d9d5560.js": "/schwan_cares_proposal/precache-manifest.907af6c47eb30af4138f90d48d9d5560.js",
   "service-worker.js": "/schwan_cares_proposal/service-worker.js"
 }
