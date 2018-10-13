@@ -1,0 +1,37 @@
+.button {
+  transitoin: all 0.2s;
+  &__signup,
+  &__login {
+    color: white;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 3rem;
+    transition: all 0.2s;
+    &:hover {
+      opacity: 0.5;
+      cursor: pointer;
+    }
+  }
+  &__shop-now--full,
+  &__share--full {
+    display: grid;
+    grid-template-rows: min-content min-content;
+    justify-content: center;
+    box-shadow: 1px 1px 19px 1px #888888;
+    width: 30rem;
+    border-radius: 5rem;
+  }
+  &__share--full {
+    color: rgba(210, 32, 48, 1);
+    background-color: white;
+  }
+
+  &__name {
+    font-size: 3.5rem;
+    font-weight: 500;
+  }
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.5;
+  }
+}

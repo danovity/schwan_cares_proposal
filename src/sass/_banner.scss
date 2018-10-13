@@ -1,0 +1,80 @@
+.banner {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.35),
+      rgba(255, 255, 255, 0.35)
+    ),
+    url("https://schwans-prod.imgix.net/images/campaigns/photos/000/041/287/width_800/1536238305DSC02778.JPG?ch=Width%2CDPR%2CSave-Data&auto=format%2Ccompress&dpr=2&w=650");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: grid;
+  grid-template-rows: min-content;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+
+  height: 100vh;
+  justify-content: center;
+  align-content: end;
+  color: white;
+
+  position: relative;
+
+  &__container {
+    background-image: linear-gradient(
+      to right bottom,
+      rgba(210, 32, 48, 1),
+      rgba(210, 32, 48, 1)
+    );
+
+    &--duration {
+      display: grid;
+      grid-template-rows: repeat(3, min-content);
+    }
+  }
+
+  &__campaign {
+    &-currentRaised {
+      font-size: 7rem;
+      font-weight: 700;
+    }
+
+    &-toBeRaised {
+      font-size: 3rem;
+    }
+
+    &-teamSize {
+      font-size: 2rem;
+    }
+
+    &-daysLeft {
+      &__container {
+        display: grid;
+        grid-template-columns: min-content min-content;
+      }
+
+      &--number {
+        font-size: 7rem;
+        font-weight: 700;
+      }
+
+      &--text {
+        font-size: 3rem;
+      }
+    }
+
+    &-createdBy {
+      display: grid;
+      grid-template-columns: min-content 1fr;
+
+      &__container--main {
+        display: grid;
+        grid-template-rows: repeat(3, min-content);
+      }
+    }
+  }
+}
+
+.user-avatar {
+  border-radius: 100%;
+  height: 50%;
+}

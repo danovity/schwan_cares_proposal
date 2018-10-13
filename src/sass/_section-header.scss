@@ -1,0 +1,7 @@
+.section-header {
+  display: grid;
+  grid-template-columns: 1fr minmax(min-content, 120rem) 1fr;
+  grid-template-rows: min-content min-content;
+
+  justify-items: center;
+}
