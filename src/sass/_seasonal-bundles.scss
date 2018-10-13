@@ -1,0 +1,21 @@
+.seasonal-bundles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-column-gap: 2.5rem;
+  margin-bottom: 4rem;
+  padding: 0rem 4rem;
+
+  &__container {
+    display: grid;
+    grid-template-rows: 1fr min-content;
+    box-shadow: 10px 10px 8px 10px #888888;
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__content {
+    color: $color-primary;
+  }
+}
