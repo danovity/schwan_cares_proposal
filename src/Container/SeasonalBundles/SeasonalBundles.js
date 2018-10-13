@@ -18,6 +18,14 @@ export default class SeasonalBundles extends Component {
             </div>
             <div className="seasonal-bundles__actions">
               <div className="seasonal-bundles__price">$108.95</div>
+              <div className="seasonal-bundles__buttons">
+                <div className="button button__normal button__normal--shop">
+                  Shop
+                </div>
+                <div className="button button__normal button__normal--share">
+                  Share
+                </div>
+              </div>
             </div>
           </div>
         </div>
