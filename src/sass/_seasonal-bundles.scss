@@ -11,6 +11,13 @@
     box-shadow: 3px 3px 8px 1px #888888;
   }
 
+  &__header {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
   &__img {
     width: 100%;
   }
@@ -31,6 +38,16 @@
   &__buttons {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-items: center;
+    grid-column-gap: 1rem;
+    text-align: center;
+  }
+
+  &__price {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  &__description {
+    font-size: 1.8rem;
   }
 }

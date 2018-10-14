@@ -21,6 +21,11 @@
 
   margin-top: 10rem;
 
+  @media only screen and (max-width: 500px) {
+    margin-top: 0;
+    align-content: initial;
+  }
+
   &__header,
   &__recent-supporters,
   &__container--progressAndButtons {
@@ -54,6 +59,10 @@
       grid-gap: 1rem;
       overflow: hidden;
       height: 18rem;
+
+      @media only screen and (max-width: 500px) {
+        height: 30vh;
+      }
 
       &:hover {
         overflow-y: scroll;
@@ -92,6 +101,9 @@
   &__container--progressAndButtons {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    @media only screen and (max-width: 400px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__progress {
