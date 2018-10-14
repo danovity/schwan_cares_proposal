@@ -464,7 +464,8 @@ a {
     color: white;
     font-size: 2rem;
     text-align: center;
-    font-weight: 500; }
+    font-weight: 500;
+    align-self: center; }
   .featured-products__button {
     background-color: #d22030;
     color: white;
