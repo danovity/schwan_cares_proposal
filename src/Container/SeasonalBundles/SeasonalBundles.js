@@ -2,7 +2,6 @@ import React from "react";
 import BundlesCard from "../../Components/BundlesCard";
 
 export default ({ bundles }) => {
-  console.log("inside bundles,", bundles);
   return (
     <section className="seasonal-bundles">
       {bundles
@@ -12,7 +11,7 @@ export default ({ bundles }) => {
               description={description}
               price={price}
               imageUrl={image}
-              index={index}
+              key={index}
             />
           ))
         : null}

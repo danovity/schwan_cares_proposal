@@ -11,6 +11,7 @@ class App extends Component {
     super(props);
     this.state = {};
   }
+
   async componentDidMount() {
     const firstApiCall = await axios.get(
       "https://s3.amazonaws.com/flipgive-developer-test/base.json"
@@ -20,11 +21,7 @@ class App extends Component {
       "https://s3.amazonaws.com/flipgive-developer-test/page2.json"
     );
 
-    console.log("firstApiCall is,", firstApiCall);
-    console.log("secondApiCall is,", secondApiCall);
-
     const campaignDetails = firstApiCall.data.campaigns[1];
-    console.log("campaignDetails is,", campaignDetails);
 
     const {
       bundles,
@@ -32,13 +29,10 @@ class App extends Component {
       supporters
     } = campaignDetails;
 
-    const appendToFeaturedProducts = secondApiCall.data.categories.forEach(
-      item => {
-        featuredProducts.push(item);
-      }
-    );
-    console.log("bundles is,", bundles);
-    console.log("featuredproducts is,", featuredProducts);
+    secondApiCall.data.categories.forEach(item => {
+      featuredProducts.push(item);
+    });
+
     this.setState({ featuredProducts, bundles, supporters, campaignDetails });
   }
 

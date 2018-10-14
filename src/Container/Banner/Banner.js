@@ -88,12 +88,12 @@ export default ({ supporters, campaignDetails }) => {
                   {campaignDetails ? campaignDetails.owner.name : null}
                 </div>
                 <div className="banner__createdBy--icon">
-                  <i class="fas fa-envelope" />
+                  <i className="fas fa-envelope" />
                 </div>
               </div>
               <div className="banner__createdBy--rightSide--bottom">
                 <div className="banner__createdBy--link">
-                  <a href="#">
+                  <a href=" ">
                     {campaignDetails ? campaignDetails.category : null}
                   </a>
                 </div>
@@ -109,19 +109,23 @@ export default ({ supporters, campaignDetails }) => {
         <div className="banner__recent-supporters__container">
           {supporters
             ? supporters.map(
-                ({
-                  teamMemberName,
-                  supporterName,
-                  action,
-                  giveAmount,
-                  supportedAt
-                }) => (
+                (
+                  {
+                    teamMemberName,
+                    supporterName,
+                    action,
+                    giveAmount,
+                    supportedAt
+                  },
+                  index
+                ) => (
                   <RecentSupportersCard
                     teamMemberName={teamMemberName}
                     supporterName={supporterName}
                     action={action}
                     giveAmount={giveAmount}
                     supportedAt={supportedAt}
+                    key={index}
                   />
                 )
               )
