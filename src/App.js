@@ -26,8 +26,11 @@ class App extends Component {
     const campaignObject = firstApiCall.data.campaigns[1];
     console.log("campaignObject is,", campaignObject);
 
-    const bundles = campaignObject.bundles;
-    const featuredProducts = campaignObject.categories;
+    const {
+      bundles,
+      categories: featuredProducts,
+      supporters
+    } = campaignObject;
 
     const appendToFeaturedProducts = secondApiCall.data.categories.forEach(
       item => {
@@ -35,19 +38,26 @@ class App extends Component {
       }
     );
     console.log("bundles is,", bundles);
-    this.setState({ featuredProducts, bundles });
+    console.log("featuredproducts is,", featuredProducts);
+    this.setState({ featuredProducts, bundles, supporters });
   }
 
   render() {
-    const { featuredProducts, bundles } = this.state;
+    const { featuredProducts, bundles, supporters } = this.state;
 
     return (
       <div className="App">
         <NavBar />
-        <Banner />
-        <SectionHeader />
+        <Banner supporters={supporters} />
+        <SectionHeader
+          header={"Seasonal Bundles"}
+          subheader={"limited quantity"}
+        />
         <SeasonalBundles bundles={bundles} />
-        <SectionHeader />
+        <SectionHeader
+          header={"Featured Products"}
+          subheader={"available any seasons"}
+        />
         <FeaturedProducts featuredProducts={featuredProducts} />
       </div>
     );

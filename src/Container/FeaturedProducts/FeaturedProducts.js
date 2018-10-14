@@ -5,8 +5,8 @@ export default ({ featuredProducts }) => {
   return (
     <section className="featured-products">
       {featuredProducts
-        ? featuredProducts.map(({ name, image }) => (
-            <FeaturedProductsCard name={name} imageUrl={image} />
+        ? featuredProducts.map(({ name, image }, index) => (
+            <FeaturedProductsCard name={name} imageUrl={image} index={index} />
           ))
         : null}
     </section>

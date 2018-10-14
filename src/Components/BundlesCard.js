@@ -1,8 +1,8 @@
 import React from "react";
 
-export default ({ title, description, price, imageUrl }) => {
+export default ({ title, description, price, imageUrl, index }) => {
   return (
-    <div className="seasonal-bundles__container">
+    <div className="seasonal-bundles__container" key={index}>
       <figure className="seasonal-bundles__img-container">
         <img src={imageUrl} alt={title} className="seasonal-bundles__img" />
       </figure>

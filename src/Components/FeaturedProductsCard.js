@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 
-export default ({ name, imageUrl }) => {
+export default ({ name, imageUrl, index }) => {
   return (
-    <div className="featured-products__container">
+    <div className="featured-products__container" key={index}>
       <div className="featured-products__header">{name}</div>
       <figure className="featured-products__image-container">
         <img src={imageUrl} alt="Meats" className="featured-products__image" />

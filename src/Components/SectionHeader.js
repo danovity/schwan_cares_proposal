@@ -1,14 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 
-export class SectionHeader extends Component {
-  render() {
-    return (
-      <div className="section-header">
-        <h2 className="heading-secondary">Seasonal Bundles</h2>
-        <p className="normal-text normal-text--section">limited quantity</p>
-      </div>
-    );
-  }
-}
-
-export default SectionHeader;
+export default ({ header, subheader }) => {
+  return (
+    <div className="section-header">
+      <h2 className="heading-secondary">{header}</h2>
+      <p className="normal-text normal-text--section">{subheader}</p>
+    </div>
+  );
+};

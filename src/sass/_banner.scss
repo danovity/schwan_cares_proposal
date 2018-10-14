@@ -52,7 +52,12 @@
       color: red;
       height: 15rem;
       grid-gap: 1rem;
-      overflow: scroll;
+      overflow: hidden;
+      height: 12rem;
+
+      &:hover {
+        overflow-y: scroll;
+      }
     }
 
     &__card {
