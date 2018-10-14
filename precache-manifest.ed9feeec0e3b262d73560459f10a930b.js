@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/schwan_cares_proposal/static/css/main.97d0e53b.chunk.css"
   },
   {
-    "revision": "2d6acfc0c295923d8e4fd5c7509ed6e2",
+    "revision": "7636a0ec41b57b5550e73c4b029de686",
     "url": "/schwan_cares_proposal/index.html"
   }
 ];
