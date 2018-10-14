@@ -117,7 +117,12 @@ a {
       color: #d22030; }
 
 .banner {
-  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)), url("https://schwans-prod.imgix.net/images/campaigns/photos/000/041/287/width_800/1536238305DSC02778.JPG?ch=Width%2CDPR%2CSave-Data&auto=format%2Ccompress&dpr=2&w=650");
+  /* background-image: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.35),
+      rgba(255, 255, 255, 0.35)
+    ),
+    url("https://schwans-prod.imgix.net/images/campaigns/photos/000/041/287/width_800/1536238305DSC02778.JPG?ch=Width%2CDPR%2CSave-Data&auto=format%2Ccompress&dpr=2&w=650"); */
   background-size: cover;
   background-repeat: no-repeat;
   display: grid;
@@ -203,11 +208,28 @@ a {
     height: 15rem;
     grid-gap: 1rem;
     overflow: hidden;
-    height: 12rem; }
+    height: 18rem; }
     .banner__recent-supporters__container:hover {
       overflow-y: scroll; }
   .banner__recent-supporters__card {
     box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12); }
+    .banner__recent-supporters__card--supporterName {
+      font-size: 1.3rem;
+      color: white;
+      text-align: center;
+      background-color: red;
+      font-weight: 500;
+      padding: 0.25rem; }
+    .banner__recent-supporters__card--action {
+      font-size: 1.6rem;
+      font-weight: 500; }
+    .banner__recent-supporters__card--actionContainer {
+      padding: 1rem; }
+    .banner__recent-supporters__card--teamMember {
+      font-size: 1.2rem;
+      margin-top: 0.5rem; }
+    .banner__recent-supporters__card--timeSupported {
+      padding: 0rem 1rem 1rem 1rem; }
   .banner__container--progressAndButtons {
     display: grid;
     grid-template-columns: 1fr 1fr; }
@@ -217,7 +239,8 @@ a {
     align-content: center;
     justify-content: center; }
     .banner__progress--amountRaised {
-      font-size: 8rem; }
+      font-size: 8rem;
+      line-height: initial; }
     .banner__progress--goal {
       font-size: 2rem; }
     .banner__progress--top {
@@ -226,16 +249,27 @@ a {
     .banner__progress--bottom {
       display: grid;
       grid-template-columns: min-content 1fr; }
+    .banner__progress--daysLeftText {
+      white-space: nowrap;
+      font-size: 1.6rem;
+      margin-top: 1rem; }
   .banner__buttons {
     display: grid;
-    grid-template-rows: min-content min-content min-content; }
+    align-content: end;
+    grid-template-rows: min-content min-content min-content;
+    grid-row-gap: 1rem;
+    padding: 1rem; }
     .banner__buttons--container {
       background-color: #d22030;
       display: grid;
       justify-items: center;
       border-radius: 3rem;
       font-size: 2.5rem;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      border: 1px solid white; }
+      .banner__buttons--container:hover {
+        cursor: pointer;
+        opacity: 0.5; }
       .banner__buttons--container--share {
         background-color: white;
         color: #d22030;
@@ -244,8 +278,46 @@ a {
         border-radius: 3rem;
         font-size: 2.5rem;
         text-transform: uppercase; }
+        .banner__buttons--container--share:hover {
+          cursor: pointer;
+          opacity: 0.5; }
     .banner__buttons--text {
       font-size: 1rem; }
+  .banner__createdBy {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    align-items: center;
+    grid-column-gap: 1rem; }
+    .banner__createdBy__avatarContainer {
+      height: 5rem;
+      display: initial;
+      margin-block-start: 0;
+      margin-block-end: 0;
+      margin-inline-start: 0;
+      margin-inline-end: 0; }
+    .banner__createdBy__avatar {
+      height: 100%;
+      border-radius: 100%; }
+    .banner__createdBy--text {
+      font-size: 1.5rem; }
+    .banner__createdBy--userName {
+      font-size: 1.5rem;
+      font-weight: 500; }
+    .banner__createdBy--link a {
+      font-size: 1.5rem;
+      color: white;
+      transition: all 0.2s; }
+      .banner__createdBy--link a:hover {
+        opacity: 0.5; }
+    .banner__createdBy--rightSide {
+      display: grid;
+      grid-template-rows: min-content min-content; }
+      .banner__createdBy--rightSide--top {
+        display: grid;
+        white-space: nowrap;
+        grid-column-gap: 1rem;
+        grid-template-columns: min-content min-content min-content;
+        align-items: center; }
 
 /* 
 .user-avatar {

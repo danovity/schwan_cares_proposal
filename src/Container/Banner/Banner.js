@@ -1,24 +1,65 @@
-import React from "react";
+import React, { Fragment } from "react";
 import RecentSupportersCard from "../../Components/RecentSupportersCard";
 
-export default ({ supporters }) => {
+function timeDifference(endsAt) {
+  let timeEnded = new Date(endsAt).getTime();
+  let difference = Date.now() - timeEnded;
+  let daysDifference = Math.floor(difference / 1000 / 60 / 60 / 24);
+
+  if (daysDifference > 0) {
+    return (
+      <div className="banner__progress--daysLeftText">Campaign Has ended.</div>
+    );
+  } else {
+    return (
+      <Fragment>
+        <div className="banner__progress--daysLeft">
+          ${Math.abs(daysDifference)}
+        </div>
+        <div className="banner__progress--daysLeftText">
+          days left to earn cash back
+        </div>
+      </Fragment>
+    );
+  }
+}
+
+export default ({ supporters, campaignDetails }) => {
   return (
-    <section className="banner">
+    <section
+      className="banner"
+      style={{
+        backgroundImage: `linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.35),
+        rgba(255, 255, 255, 0.35)
+      ),
+      url(${campaignDetails ? campaignDetails.image : null})`
+      }}
+    >
       <div className="banner__header">
-        Highland Community Middle School Project Fund
+        {campaignDetails ? campaignDetails.name : null}
       </div>
 
       <div className="banner__container--progressAndButtons">
         <div className="banner__progress">
           <div className="banner__progress--top">
-            <div className="banner__progress--amountRaised">$1,075</div>
-            <div className="banner__progress--goal">of $3,000 Goal</div>
+            <div className="banner__progress--amountRaised">
+              $
+              {campaignDetails
+                ? parseInt(campaignDetails.amountRaised).toFixed(0)
+                : null}
+            </div>
+            <div className="banner__progress--goal">
+              of $
+              {campaignDetails
+                ? parseInt(campaignDetails.goal).toFixed(0)
+                : null}{" "}
+              Goal
+            </div>
           </div>
           <div className="banner__progress--bottom">
-            <div className="banner__progress--daysLeft">93</div>
-            <div className="banner__progress--daysLeftText">
-              days left to earn cash back
-            </div>
+            {campaignDetails ? timeDifference(campaignDetails.endsAt) : null}
           </div>
         </div>
         <div className="banner__buttons">
@@ -40,17 +81,21 @@ export default ({ supporters }) => {
                 className="banner__createdBy__avatar"
               />
             </figure>
-            <div className="banner__createBy--rightSide">
-              <div className="banner__createBy--rightSide--top">
+            <div className="banner__createdBy--rightSide">
+              <div className="banner__createdBy--rightSide--top">
                 <div className="banner__createdBy--text">Created by</div>
-                <div className="banner__createdBy--userName">Abbie Ramel</div>
+                <div className="banner__createdBy--userName">
+                  {campaignDetails ? campaignDetails.owner.name : null}
+                </div>
                 <div className="banner__createdBy--icon">
                   <i class="fas fa-envelope" />
                 </div>
               </div>
-              <div className="banner__createBy--rightSide--bottom">
+              <div className="banner__createdBy--rightSide--bottom">
                 <div className="banner__createdBy--link">
-                  <a href="#">Schools & Education</a>
+                  <a href="#">
+                    {campaignDetails ? campaignDetails.category : null}
+                  </a>
                 </div>
               </div>
             </div>

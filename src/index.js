@@ -2,7 +2,7 @@ import React from "react";
 import { render } from "react-dom";
 import App from "./App";
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core";
-import { red, amber } from "@material-ui/core/colors";
+import { red } from "@material-ui/core/colors";
 import * as serviceWorker from "./serviceWorker";
 import "./index.css";
 
@@ -13,12 +13,7 @@ serviceWorker.unregister();
 
 const theme = createMuiTheme({
   palette: {
-    primary: red,
-    secondary: {
-      main: amber.A400,
-      light: amber[200],
-      dark: amber[700]
-    }
+    primary: red
   },
   spacing: {
     unit: 10

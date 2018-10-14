@@ -23,7 +23,7 @@ export default ({
       </div>
       <div className="banner__recent-supporters__card--actionContainer">
         <div className="banner__recent-supporters__card--action">
-          {action} {giveAmount} to
+          {action} ${giveAmount} to
         </div>
         <div className="banner__recent-supporters__card--teamMember">
           {teamMemberName}
