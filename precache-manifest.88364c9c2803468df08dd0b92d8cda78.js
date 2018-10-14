@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/schwan_cares_proposal/static/js/runtime~main.9c76c8dd.js"
   },
   {
-    "revision": "f88f3f538906d8735ceb",
-    "url": "/schwan_cares_proposal/static/js/main.f88f3f53.chunk.js"
+    "revision": "f8401872459d30d0e9e6",
+    "url": "/schwan_cares_proposal/static/js/main.f8401872.chunk.js"
   },
   {
     "revision": "e3f5176467a5ee18b49c",
     "url": "/schwan_cares_proposal/static/js/1.e3f51764.chunk.js"
   },
   {
-    "revision": "f88f3f538906d8735ceb",
-    "url": "/schwan_cares_proposal/static/css/main.c1741888.chunk.css"
+    "revision": "f8401872459d30d0e9e6",
+    "url": "/schwan_cares_proposal/static/css/main.489f0cb1.chunk.css"
   },
   {
-    "revision": "7fd9bb4b3ca0cb633c993726e7ab481c",
+    "revision": "e68b566d05a706b9d2455a1e0670834b",
     "url": "/schwan_cares_proposal/index.html"
   }
 ];
