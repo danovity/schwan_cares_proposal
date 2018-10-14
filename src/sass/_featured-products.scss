@@ -10,6 +10,8 @@
     display: grid;
 
     grid-template-rows: 1fr 20rem 1fr;
+
+    background-color: #d22030;
   }
 
   &__image-container {
@@ -21,7 +23,7 @@
     width: 100%;
     height: 100%;
     transition: all 0.2s;
-    opacity: 0.65;
+    opacity: 0.75;
 
     &:hover {
       cursor: pointer;
