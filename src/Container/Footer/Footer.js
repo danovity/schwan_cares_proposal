@@ -20,7 +20,7 @@ export default () => {
           </li>
         </ul>
         <ul className="footer__list">
-          <li className="footer__list-header">Help</li>
+          <li className="footer__list-header">About</li>
           <li className="footer__list-item">Schwan's Cares</li>
           <li className="footer__list-item">As Seen In</li>
           <li className="footer__list-item">Facebook</li>
