@@ -12,6 +12,7 @@ class App extends Component {
         <Banner />
         <SectionHeader />
         <SeasonalBundles />
+        <SectionHeader />
       </div>
     );
   }

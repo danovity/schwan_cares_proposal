@@ -7,7 +7,9 @@ const styles = {
   root: {
     gridColumn: "1/4",
     marginTop: "0rem",
-    backgroundColor: "primary"
+    backgroundColor: "primary",
+    width: "100%",
+    borderRadius: "0px"
   },
   label: {
     fontSize: "1.5rem",
