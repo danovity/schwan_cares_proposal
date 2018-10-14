@@ -476,3 +476,27 @@ a {
     .featured-products__button:hover {
       cursor: pointer;
       opacity: 0.5; }
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr minmax(min-content, 120rem) 1fr;
+  background-color: #e1e1e1;
+  padding: 4rem; }
+  .footer__container {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center; }
+  .footer__list-header {
+    color: black;
+    font-size: 3rem;
+    text-transform: uppercase; }
+  .footer__list {
+    list-style: none; }
+  .footer__list-item {
+    color: #d22030;
+    font-size: 1.2rem;
+    transition: all 0.2s; }
+    .footer__list-item:hover {
+      opacity: 0.5;
+      cursor: pointer; }

@@ -4,6 +4,7 @@ import SectionHeader from "./Components/SectionHeader";
 import Banner from "./Container/Banner/Banner";
 import SeasonalBundles from "./Container/SeasonalBundles/SeasonalBundles";
 import FeaturedProducts from "./Container/FeaturedProducts/FeaturedProducts";
+import Footer from "./Container/Footer/Footer";
 import axios from "axios";
 
 class App extends Component {
@@ -58,6 +59,7 @@ class App extends Component {
           subheader={"available any seasons"}
         />
         <FeaturedProducts featuredProducts={featuredProducts} />
+        <Footer />
       </div>
     );
   }
