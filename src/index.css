@@ -358,6 +358,7 @@ a {
     grid-column: 2;
     text-transform: uppercase;
     font-weight: 500;
+    white-space: nowrap;
     position: relative; }
     .normal-text--section:before, .normal-text--section:after {
       position: absolute;
